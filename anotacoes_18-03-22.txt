@@ -1,0 +1,42 @@
+FRED BROOKS
+    O maior desafio da época, a maior preocupação era a construção do hardware, por ser bem limitado.
+    Década de 70 => Crise do Software
+    Responsável pelo desenvolvimento do System/360
+    - Livro: "The Mythical Man-Month: Essays on Software Engineering"
+    - Artigo: "No Silver Bullet: Essence and Accident in Software Engineering"
+        -> Não vamos resolver o problema: o problema está na -essência-, não no -acidente-
+
+
+    4 núcleos da essência do Software (baseados em "No Silver Bullet"):
+
+        -> Invisibilidade
+            |-> Não somos capazes de visualizar o software.
+            |-> APOO tenta combater isso.
+
+        -> Complexidade
+            |-> Complexidade é inerente ao software.
+            |-> Um código de 20 000 linhas é muito maior do que um de 10 000.
+                |-> Software possui a tendência de reaproveitar soluções, portanto são 10 000 linhas a
+                    mais com soluções completamente diferentes.
+
+        -> Mutabilidadade
+            |-> Há uma grande pressão sobre o software para ser mudado.
+
+        -> Conformidade
+            |-> Softwares são arbitrários. Dependem de preferências arbitrárias das pessoas envolvidas.
+            |-> É sucetível a leis externas.
+            |-> Por ser o mais fácil de mudar, é o software que irá se ajustar às novas necessidades.
+
+
+    The Mythical Man-Month (MMM):
+
+        Tinha acabado de desenvolver o System/360, e escreveu um livro com o que aprendeu
+
+        Título: 
+            -> Man-Month (Homem-Mês): o esforço que um homem despende em um mês.
+                |-> Está implícita a ideia de que, quanto mais pessoas trabalharem em um projeto, mais
+                    rápido será sua execução, proporcionalmente.
+                |-> Isto não se aplica ao desenvolvimento de softwares. 
+                |-> Não é possível calcular o trabalho em homem-mês satisfatoriamente.
+                |-> "Você não pode contratar 9 mulheres para ter um filho em um mês"
+                |-> Colocar muitas pessoas em um projeto de software -ATRASA- o projeto.
