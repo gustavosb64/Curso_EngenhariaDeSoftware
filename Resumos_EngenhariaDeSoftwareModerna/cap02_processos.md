@@ -221,9 +221,25 @@ _(A seguinte sessão foi copiada diretamente do livro texto)_
         * Avaliar se os resultados produzidos pelos times Scrum estão, de fato, gerando benefícios e valor para a organização.
 
 ## 2.5 Kanban
+_(Sessão não comentada)_
 
 ## 2.6 Quando não usar métodos ágeis?
-
+* Lembre-se: **não existe bala de prata em Engenharia de Software**.
+* **Design Incremental**:
+    * Esse tipo de design faz sentido quando o time tem uma primeira visão do design do sistema.
+    * Quando o domínio do sistema é novo e muito complexo, ou o cusot de mudanças é muito alto, recomenda-se adotar uma faze de design inicial.
+* **Histórias de Usuário**:
+    * Em certos casos, pode ser improtante ter uma especificação detalhada de requisitos no início do projeto.
+* **Envolvimento com o cliente**:
+    * Quando os requisitos do sistema são estáveis e de pleno conhecimento da equipe, um PO se faz desncessário.
+* **Documentação leve e simplificada**:
+    * Às vezes, documentações detalhadas se fazem necessárias, como em sistemas críticos, por exemplo.
+* **Times Auto-organizáveis**:
+    * Times ágeis são autônomos para trabalhar sem interferências durante o _time-box_ de uma iteração, o que pode ser incompatível com a cultura de certas organizações
+* **Contratos de escopo aberto**:
+    * Algumas organizações podem não se sentir seguras para ssinar contrato de escopo aberto.
+* Porém, duas práticas ágeis são adotadas em quase todos os projetos de software:
+    * **Times pequenos** e **Iterações**.
 
 
 
