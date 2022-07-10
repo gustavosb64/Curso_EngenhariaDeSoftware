@@ -149,6 +149,80 @@ _(A seguinte sessão foi copiada diretamente do livro texto)_
         * Interfalo de tempo entre início do desenvolvimento e o momento em que o projeto começa a gerar seus primeiros resultados financeiros (que também deve ser pequeno, aproximadamente um ano).
 
 ## 2.4 Scrum
+* Método ágil, iterativo e incremental para gerenciamento de projetos.
+* Principais diferenças com XP:
+    * XP é voltado exclusivamente para projetos de desenvolvimento de software.
+    * Scrum é um método ágil para gerenciamento de projetos, que não necessariamente precisam ser projetos de software.
+* Definições:
+    * **Papéis**: Dono do produto (PO), Scrum Master, Desenvolvedor.
+    * **Artefatos**: Backlog do Produto, Backlog do Sprint, Quadro Scrum, Gráfico de Burndown.
+    * **Eventos:** Planejamento do Sprint, Sprint, Reuniões diárias, Revisão do Sprint, Retrospectiva.
+### 2.4.1 Papéis
+* Time scrum são formados por um PO, um Scrum Master e de 3 a 9 desenvolvedores
+* **Product Owner**: representante dos clientes. Escreve histórias dos usuários.
+* **Scrum Master**: especialista em Scrum do time, responsável por garantir que as regras do método estão sendo seguidas. Também é um facilitador dos trabalhos e removedor de impedimentos.
+* Times **cross-funcionais**: multidisciplinares, e não deve depender de membros externos.
+### 2.4.2 Principais Artefatos e Eventos
+* **Backlog do Produto**:
+    * lista de histórias, ordenada por prioridades. É dinâmico, sendo constantemente atualizado.
+* **Sprint**:
+    * Nome de uma iteração. Ao final de uma sprint, deve-se entregar ao cliente um produto com valor tangível para ocliente.
+* **Planejamento do Sprint**:
+    * Reunião na qual todo time se reúne para decidir as histórias que serão implementadas.
+    * Dividida em duas partes:
+        * 1ª: com o PO, onde sugere as histórias a serem implementadas.
+        * 2ª: comandada pelos desenvolvedores, onde estimam e analisam as histórias.
+* **Backlog do Sprint**:
+    * Artefato gerado ao final do Planejamento do Sprint.
+    * Lista de tarefas do sprint, bem como a duração das mesmas.
+* Times de Scrum são **auto-organizáveis**.
+* Para que uma história seja marcada como concluída, pode-se exigir a implementação de testes de unidade, bem como a revisão do código.
+* **Gráfico de Burndown**:
+    * A cada dia do sprint, esse gráfico mostra quantas horas são necessárias para se implementar as tarefas qeu ainda não estão concluídas.
+### 2.4.3 Outros Eventos
+* **Reuniões diárias** de 15 minutos, de pé.
+* **Revisão do Sprint**:
+    * Reunião param mostrar os resultados de um sprint. Todos os membros participam.
+    * Todas as histórias devem ser aprovadas pelo PO.
+* **Retrospectiva do Sprint**:
+    * Última atividade de um Sprint.
+    * Trata-se de uma reunião do time Scrum, com o objetivo de refletir sobre o sprint que está terminando, vendo o que pode ser melhorado no processo.
+* Todos os evetnos do Scrum têm uma duração bem definida, chamada de **time-box**.
+#### Perguntas frequentes
+_(A seguinte sessão foi copiada diretamente do livro texto)_
+ 
+* **O que significa a palavra Scrum?** 
+    * O nome não é uma sigla, mas uma referência à reunião de jogadores realizada em uma partida de rugby para decidir quem vai ficar com a bola após uma infração involuntária.
+
+* **O que é um squad?** 
+    * Esse termo é um sinônimo para time ágil ou time Scrum. O nome foi popularizado pela Spotify. Assim como times Scrum, squads são pequenos, cross-funcionais e auto-organizáveis. É comum ainda usar o nome tribo para denotar um conjunto de squads.
+
+* **O Dono do Produto pode ser um comitê?** 
+    * Em outras palavras, pode existir mais de um Dono de Produto em um time Scrum? A resposta é não. Apenas um membro do time exerce essa função. O objetivo é evitar decisões por comitê, que tendem a gerar produtos lotados de funcionalidades, mas que foram implementadas apenas para atender a determinados membros do comitê. Porém, nada impede que o Dono do Produto faça a ponte entre o time e outros usuários com amplo domínio da área do produto que está sendo construído. Na verdade, essa é uma tarefa esperada de Donos de Produto, pois às vezes existem requisitos que são do domínio de apenas alguns colaboradores da organização. Cabe então ao Dono do Produto intermediar as conversas entre os desenvolvedores e tais usuários.
+
+* **O Scrum Master deve exercer seu papel em tempo integral?** 
+    * Idealmente, sim. Porém, em times maduros, que conhecem e praticam Scrum há bastante tempo, às vezes não é necessário ter um Scrum Master em tempo integral. Nesses casos, existem duas possibilidades: (1) permitir que o Scrum Master desempenhe esse papel em mais de um time Scrum; (2) alocar a responsabilidade de Scrum Master a um dos membros do time. No entanto, caso a segunda alternativa seja adotada, o Scrum Master não deve ser também o Dono do Produto. A razão é que uma das responsabilidades do Scrum Master é exatamente acompanhar e auxiliar o Dono do Produto em suas tarefas de escrever e priorizar histórias do usuário.
+
+* **O Scrum Master precisa ter um diploma de nível superior em um curso da área de Computação?** 
+    * Não, pois sua função envolve remover impedimentos e assegurar que o time esteja seguindo os princípios de Scrum. Portanto, ele não é um resolvedor de problemas técnicos, tais como bugs, uso correto de frameworks, implementação de funcionalidades, etc. Por outro lado, isso não impede que um desenvolvedor técnico, com um curso superior na área de Computação, assuma as funções de Scrum Master, como vimos na resposta anterior. Existem também certificações para Scrum Master, as quais podem ser requeridas por empresas que decidem adotar Scrum.
+
+* **Além de histórias, quais outros itens podem fazer parte do Backlog do Produto?** 
+    * Também podem ser cadastrados no Backlog do Produto itens como bugs — principalmente aqueles mais complexos e que demandam dias para serem resolvidos — e também melhorias em histórias já implementadas.
+
+* **Existem gerentes quando se usa Scrum?** 
+    * A resposta é sim! De fato, times Scrum são autônomos para implementar as histórias priorizadas pelo Dono do Produto. Porém, um projeto demanda diversas outras decisões que devem ser tomadas em um nível gerencial. Dentre essas decisões, podemos citar as seguintes:
+
+        * Contratar e alocar membros para os times Scrum; ou seja, os desenvolvedores não têm autonomia para escolher em quais times eles vão trabalhar. Essa é uma decisão de mais alto nível e, portanto, tomada por gerentes.
+
+        * Decidir os objetivos e responsabilidades de cada time, incluindo o sistema — ou parte de um sistema — que o time irá desenvolver usando Scrum. Por exemplo, um time não decide, por conta própria, que a organização precisa de um novo sistema de contabilidade e então começa a desenvolvê-lo. Essa é uma decisão estratégica, que cabe aos gerentes e executivos da organização.
+
+        * Gerenciar e administrar questões de recursos humanos, incluindo contratações de novos funcionários, desligamentos de funcionários, promoções, transferências, treinamentos, etc.
+
+        * Avaliar se os resultados produzidos pelos times Scrum estão, de fato, gerando benefícios e valor para a organização.
+
+## 2.5 Kanban
+
+## 2.6 Quando não usar métodos ágeis?
 
 
 
