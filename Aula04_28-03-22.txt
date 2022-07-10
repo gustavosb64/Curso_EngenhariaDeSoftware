@@ -1,0 +1,83 @@
+== KANBAN ==
+    
+    -> Inspiração na ideia do "Just in Time": mínimo estoque de peças
+    -> Mais flexível que o Scrum: não tem Sprint, daily, nada disso. Mais "informal"
+    -> Os históricos vão sendo passados para as respectivas colunas conforme o projeto avança
+    -> Qualquer um pode pegar qualquer uma das histórias ou tarefas para fazer
+    -> É comum colocar um limite no work in progress (WiP) por coluna para evitar que se caia em um modelo cascata
+
+  max                        5 WiP           3 WiP            3 WiP
+        -----------------------------------------------------------------
+        | BACKLOG       |    ANÁLISE +  |    CODAR      |   TESTE +     |
+        |               |    PROJETO    |               | IMPLEMENTAÇÃO |
+        |               |  elab | conc. |  elab | conc. |  elab | conc. |
+         ---------------------------------------------------------------
+        |   H1    H2    |       |       |       |       |       |       |
+        |               |   H3  |       |       |       |       |       |
+        |               |       |       |       |       |       |       |
+        |               |       |       |       |       |       |       |
+        |               |       |       |       |       |       |       |
+        |               |       |       |       |       |       |       |
+        |               |       |       |       |       |       |       |
+        |               |       |       |       |       |       |       |
+        |               |       |       |       |       |       |       |
+        |               |       |       |       |       |       |       |
+        -----------------------------------------------------------------
+
+    -> É comum combinar Kanban com Scrum: usando um Kanban dentro da Sprint
+    -> Trello => basicamente um Kanban na web
+
+== XP ==
+
+    -> XP: (e)Xtreme Programming
+
+    -> Ideia:
+        |-> O que vale é o código.
+        |-> O que pode ser usado para tornar  o código bom, será feito ao extremo
+
+    -> Práticas
+
+        |-> 1. Pair Programming: programar sempre em duas pessoas: 
+            |-> Um programando, outro revisando em tempo real
+            |-> Ainda é algo discutido se o Pair Programming realmente é eficiente
+
+        |-> 2. On Site Custommer:
+            |-> O cliente faz parte da equipe (PO do Scrum se inspirou nisso)
+        
+        |-> 3. Collective Ownership:
+            |-> Qualquer um deve ser capaz de mexer em qualquer parte
+            |-> O código é feito de maneira que facilite para que outros consigam alterar o que já foi escrito
+
+        |-> 4. Code Standard: 
+            |-> Estabelece-se um padrão de código, e todos devem seguí-lo
+
+        |-> 5. Testing:
+            |-> Teste automatizado
+            |-> Na prática, você faz outro programa para dar as entradas para o seu programa para testá-lo
+            |-> JUnit, Selenium (teste de janela)
+            |-> Uma das partes do XP que mais foi adotada posteriormente
+
+        |-> 6. Continous Integration:
+            |-> Integração: juntar as diferentes partes do código
+            |-> Sempre que algo estivar concluído, upar no repositório e checar que não conflitou com mais ninguém
+            |-> Adiantar os conflitos o máximo possível
+
+        |-> 7. Refactoring:
+            |-> Sempre que perceber que algo pode ser mudado, mude na hora
+
+        |-> 8. Small Releases:
+            |-> Entregas simples e frequentes 
+
+        |-> 9. 40 hour week:
+            |-> Os trabalhos devem ser feitos dentro de 40 horas por semana, para garantir um ambiente mais saudável
+            |-> Ambientes insalubres prejudicam a produtividade 
+            
+        |-> 10. Metaphor:
+            |-> Combine uma metáfora do projeto com todos
+
+        |-> 11. Simple Design: 
+
+        |-> 12. Planning Game: 
+
+--------------------------------
+Lint (??): padrão Airbnb

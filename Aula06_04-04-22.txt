@@ -1,0 +1,19 @@
+= REQUISITOS
+
+    -> O que um sitema deve fazer e sob que restrições
+
+    -> *requisitos funcionais*:
+        |-> "o que um sistema deve fazer":
+        |-> suas funcionalidades
+
+    -> *requisitos não-funcionais*:
+        |-> "sob que restrições"
+        |-> Desempenho, usabilidade, segurança, disponiblidade, etc
+
+
+    -> Histórias de uso vs Casos de uso
+        |-> Casos de uso são mais detalhados
+
+
+------------------
+Programação Orientada a Aspectos

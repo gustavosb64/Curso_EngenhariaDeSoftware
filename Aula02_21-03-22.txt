@@ -1,0 +1,77 @@
+== Níveis de ignorância ==
+
+    -> N0:
+        |-> falta de ignorância (conhecimento) 
+
+    -> N1:
+        |-> falta de conhecimento 
+
+    -> N2:
+        |-> falta de noção (não sabe que não sabe) 
+
+    -> N3:
+        |-> falta de método (não sabe como ir atrás da resposta)
+
+    -> N4:
+        |-> não conhece os níveis de ignorância (não importa aqui)  
+
+---------------------------------------------------------------
+== MODELO CASCATA == 
+    
+    -> Primeira tentativa de se criar um modelo de implementação de software
+
+     ----------
+    |REQUISITOS| ------
+     ----------        |
+                       v
+     ----------    ----------
+    |PROTÓTIPO |  | ANÁLISE  |
+     ----------    ----------
+                               ----------
+                              | PROJETO  |
+                               ----------
+                                            -------------
+                                           |IMPLEMENTAÇÃO|
+                                            -------------
+                                                            -------
+                                                           | TESTE |
+                                                            -------
+                                                                      -----------
+                                                                     |IMPLANTAÇÃO|
+                                                                      -----------
+
+    -> PASSOS
+        |-> 1. Levantamento de requisitos
+            |-> Com o cliente (sem conhecimento de computação) => sem jargões
+ 
+        |-> 1.1 Protótipo
+            |-> Um plano inicial que pode ser jogado fora
+            |-> Usado para se conversar com o cliente
+            |-> NÃO É A VERSÃO ZERO DO SISTEMA
+ 
+        |-> 2. Análise
+            |-> Discute-se O QUE fazer 
+            |-> Com profissionais da área => usa-se jargões
+ 
+        |-> 3. Projeto (Design)
+            |-> Discute-se COMO fazer 
+ 
+        |-> 4. Implementação
+            |-> Construção do código
+ 
+        |-> 5. Teste
+            |-> Construção do código
+            |-> Verificação e validação
+                |-> Verificação: verificar se o que seu projeto fez cumpre os requisitos
+                |-> Validação: verificar se o software satisfaz o cliente
+ 
+        |-> 6. Implantação
+
+    -> CRÍTICAS
+        |-> Inflexível 
+        |-> Não se adapta bem aos processos de construção do software 
+        |-> Ainda assim, melhor que nada: ajuda a criar uma separação nos passos, etc.
+        |-> Em algumas situações, não é possível fugir a este método (pelas exigências do cliente, por exemplo)
+
+---------------------------------------------------------------
+Métodos mais modernos de desenvolvimento de software: "a gente vive de fazer puxadinhos"

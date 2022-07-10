@@ -1,0 +1,66 @@
+Principais problemas do Modelo Cascata:
+    |-> Poucos atuam em cada uma das etapas do modelo:
+        |-> Como as etapas posteriores dependem das anteriores, muitos funcionários ficam estagnados
+    |-> O cascata não é apenas ruim por ser inflexível, mas também pela distribuição de recursos (funcionários)
+    |-> Demanda muito tempo
+
+== Surgimento dos Métodos Ágeis ==
+
+    -> 2001: Manifesto Ágil
+
+        |-> XP
+            |-> Demanda que um funcionário do cliente faça parte da equipe
+
+        |-> Kanban
+
+        |-> Scrum
+            |-> Equipes pequenas ("do tamanho de uma pizza") (5 a 11, normalmente)
+
+            |-> Três papeis:
+                |-> Product Owner (PO) (normalmente 1)
+                    |-> Função: "incorporar" o cliente
+                    |-> Responsável por -manter- o backlog (não criar)
+                    |-> Tenta garantir que a equipe está fazendo de acordo com os requisitos do cliente
+
+                |-> Scrum Master (SM) (normalmente 1)
+                    |-> Especialista em Scrum para a equipe
+                    |-> Papel: garantir que a Scrum está evoluindo corretamente
+                    |-> Não está preocupado se o que está sendo feito está de acordo com os requisitos (papel do PO)
+                    |-> Tenta garantir que a equipe está progredindo -da forma- correta
+
+                |-> Dev (restantes)
+
+            |-> Product backlog: uma lista de requisitos
+                |-> Estória do usuário (casos de uso)
+                |-> O cliente estabelece a prioridade dos casos de uso
+                |-> PO: responsável por -manter- o backlog (não criar) 
+
+            |-> Sprint
+                |-> Separações de período curtas (de duas a quatro semanas)
+                |-> Toda equipe é ativa em todas as sprint
+                |-> PO tenta selecionar um conjunto (normalmente pequeno) de casos de uso a serem feitos em 1 sprint
+                    |-> A equipe, então, foca em solucionar estes casos de uso
+                |-> Vantagem: os ciclos ficam rápidos
+                |-> Estrutura:
+                    |-> Quatro reuniões
+                        |-> Planning: reunião de planejamento
+                            |-> Planejamento (por parte do PO) de quais casos de uso serão colocados na sprint
+                        |-> Refinement
+                            |-> Acontece em seguida da Planning
+                            |-> Pega os casos de uso selecionados e tenta refiná-los
+                        |-> Review
+                            |-> Checa se o projeto está evoluindo corretamente
+                            |-> Se algum dos casos de uso não estiver satisfatório, volta para o backlog
+                                |-> PO é quem recusa
+                        |-> Retrospect (?)
+                            |-> Retrospectiva do que deu certo ou errado da sprint
+                    |-> Daily:
+                        |-> Reunião curta diária (15 - 20 minutos)
+                        |-> Ideia dos criadores: deve ser feita de pé (para que a reunião não dure mais do que o necessário)
+                        |-> Retrospectiva do que foi feito e um resumo do que planeja fazer durante o dia
+                |-> SM garante que as reuniões estão acontecendo
+
+-----------------------------------------------
+VUE
+VUETIFY
+Padrão Spotify (o Spotify usa uma estrutura baseada no Scrum)

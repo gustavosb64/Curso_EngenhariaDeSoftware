@@ -1,0 +1,11 @@
+
+Documento de Requisitos vs Documento de Análise vs Documento de Projeto
+    |-> requisito: descreve o que vai ser feito; voltado ao cliente
+    |-> análise: descreve o que vai ser feito; voltado à equipe
+    |-> projeto: descreve como vai ser feito 
+
+Modelo de classes vs Modelo Conceitual
+    |-> Modelo Conceitual faz parte do projeto, enquanto que o Modelo Conceitual ainda faz parte do problema
+    |-> Nem tudo que será declarado no Modelo Conceitual será implementado
+
+
