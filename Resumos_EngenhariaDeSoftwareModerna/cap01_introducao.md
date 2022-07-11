@@ -1,4 +1,5 @@
-# Engenharia de Software Moderna -> Capítulo 1: Introdução
+# Engenharia de Software Moderna
+# Capítulo 1: Introdução
 
 ## 1.1 Definições, Contexto e História
 * **Engenharia de Software**: área que trata da aplicação de abordagens sitemáticas, disciplinadas e quantificáveis para desenvolver, operar, manter e evoluir software. Ou seja, propor e aplicar princípios de engenharia na construção de software.
