@@ -1,9 +1,14 @@
+# SSC0130 - Trabalho 3
+- **Gustavo Siqueira Barbosa - 10728122**
+- **Luiz Fernando Santos - 10892680**
+
 ### 1. (ENADE 2011) Uma equipe está realizando testes com o código-fonte de um sistema. Os testes envolvem a verificação de diversos componentes individualmente, bem como das interfaces entre eles. Essa equipe está realizando testes de:
 * **a) unidade**
 * **b) aceitação**
 * **c) sistema e aceitação**
 * **d) integração e sistema**
 * **e) unidade e integração**
+ 
 #### Resposta:
 * Letra **(e) unidade e integração**.
 
@@ -26,21 +31,10 @@ public void testEmptyStackException() {
 #### Resposta:
 * Podemos simplificar o teste sem inserir um elemento na lista antes.
 ```
-@Test
+@Test(expected = java.util.EmptyStackException.class)
 public void testEmptyStackException() {
-
-  boolean sucesso = false;
-  
-  try {
-    
     Stack s<Integer> = new Stack<Integer>();
-    int r = stack.pop();
-    
-  } catch (EmptyStackException e) {
-    sucesso = true;
-  }
-  
-  assertTrue(sucesso);
+    s.pop();
 }
 ```
 
@@ -110,123 +104,73 @@ public class Main {
 import java.util.List;
 import java.util.ArrayList;
 
-// teste 1
-@Test
-public void testEmptyList() {
+public class Test {
 
-    List<Integer> s = new ArrayList<Integer>();
-    boolean teste_vazio = s.isEmpty()
-    
-    assertTrue(teste_vazio);
-}
-
-// teste 2
-public void testAddElem() {
-
-    s = new ArrayList<Integer>();
-    s.add(1);
-    
-    boolean teste_add = s.isEmpty();
-    
-    assertFalse(teste_add)
-}
-
-// teste 3
-public void testSizeAndGet() {
-
-    s = new ArrayList<Integer>();
-    s.add(1);
-    s.add(2);
-    s.add(3);
-    
-    // testa size
-    int size = s.size();
-    assertEqual(3, size);
-    
-    // testa get
-    int elem = s.get(0);
-    assertEqual(1, elem);
-    
-    elem = s.get(1);
-    assertEqual(2, elem);
-    
-    elem = s.get(2);
-    assertEqual(3, elem);
-}
-
-// teste 4
-public void testRemove() {
-
-    s = new ArrayList<Integer>();
-    s.add(1);
-    s.add(2);
-    s.add(3);
-    
-    int elem = s.remove(2);
-    assertEqual(3, elem); 
-    
-    elem = s.get(0);
-    assertEqual(1, elem);
-    
-    elem = s.get(1);
-    assertEqual(2, elem);
-}
-
-// teste 5
-public void testRemoveAndIsEmpty() {
-
-    s = new ArrayList<Integer>();
-    s.add(1);
-    s.remove(0);
-    
-    boolean size = s.size();
-    assertEqual(0, size);
-    
-    boolean teste_vazio = s.isEmpty()
-    assertTrue(teste_vazio);
-}
-
-// teste 6
-public void testExceptionOutOfBounds() {
-
-    boolean acessou_exception = false;
-    try {
-      s = new ArrayList<Integer>();
-      s.add(1);
-      s.add(2);
-      s.remove(2);        
+    @Before
+    public void init(){
+        s = new ArrayList<Integer>();
     }
-    catch (IndexOutOfBoundsException e) {
-        acessou_exception = true;
-    }
-    
-    assertTrue(acessou_exception);
-}
-
-public class Main {
-
-  public static void main(String[] args) {
 
     // teste 1
-    testEmptyList();
-    
+    @Test
+    public void testEmptyList() {
+        assertTrue(s.isEmpty());
+    }
+
     // teste 2
-    testAddElem();
+    @Test
+    public void testAddElem() {
+        s.add(1);
+        assertFalse(s.isEmpty())
+    }
 
     // teste 3
-    testSizeAndGet();
+    @Test
+    public void testSizeAndGet() {
+
+        s.add(1);
+        s.add(2);
+        s.add(3);
+        
+        // testa size
+        assertEquals(3, s.size());
+        
+        // testa get
+        assertEquals(1, s.get(0));
+        assertEquals(2, s.get(1));
+        assertEquals(3, s.get(2));
+    }
 
     // teste 4
-    testRemove();
-    
+    @Test
+    public void testRemove() {
+
+        s.add(1);
+        s.add(2);
+        s.add(3);
+        
+        assertEquals(3, s.remove(2)); 
+        assertEquals(1, s.get(0));
+        assertEquals(2, s.get(1));
+    }
+
     // teste 5
-    testRemoveAndIsEmpty();
+    public void testRemoveAndIsEmpty() {
+
+        s.add(1);
+        s.remove(0);
+        
+        assertEquals(0, s.size());
+        assertTrue(s.isEmpty());
+    }
 
     // teste 6
-    testExceptionOutOfBounds();
-
-  }
-
+    @Test(expected = java.util.IndexOutOfBoundsException.class)
+    public void testExceptionOutOfBounds() {
+        s.add(1);
+        s.add(2);
+        s.remove(2);        
+    }
 }
 ```
 
@@ -243,10 +187,10 @@ boolean isConceitoA(int nota) {
     * **Resposta:** Sim. O método não cobre quando a nota é igual à 90, retornando ```false``` quando deveria retornar ```true```.
 * **b. Suponha que essa função — exatamente como ela está implementada — seja testada com duas notas: 85 e 95. Qual a cobertura de comandos desse teste? E a cobertura de branches?**
     * **Resposta:**  
-        * _Cobertura de comandos_: 66% (falta testar com 90)
+        * _Cobertura de comandos_: 100% 
         * _Cobertura de branches_: 100% (as duas branches foram testadas)
 * **c. Seja a seguinte afirmação: se um programa possui 100% de cobertura de testes, em nível de comandos, ele está livre de bugs. Ela é verdadeira ou falsa? Justifique.**
-    * **Resposta:** Falsa. Testes não podem garantir que o programa está livre de quaiquer bugs, apenas dos bugs previstos e testados. Lembrando sempre: testes de software mostram a presença de bugs, não sua ausência.
+    * **Resposta:** Falsa. Testes não podem garantir que o programa está livre de quaisquer bugs, apenas dos bugs previstos e testados. Lembrando sempre: testes de software mostram a presença de bugs, não sua ausência.
 
 ### 8. Complete os comandos assert nos trechos indicados.
 ```

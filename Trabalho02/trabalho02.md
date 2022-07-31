@@ -1,3 +1,7 @@
+# SSC0130 - Trabalho 2
+- **Gustavo Siqueira Barbosa - 10728122**
+- **Luiz Fernando Santos - 10892680**
+
 ### 1. (ENADE 2011, adaptado) Sobre padrões de projeto, assinale V ou F.
 
 * (F) Prototype é um tipo de padrão estrutural.
